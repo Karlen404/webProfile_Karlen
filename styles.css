@@ -32,9 +32,10 @@ nav {
   top: 0;
   left: 0;
   z-index: 99;
+  background-color: var(--bg);
 }
 
-.nav__content {
+.nav_content {
   max-width: var(--max-width);
   margin: auto;
   padding: 1.5rem 1rem;
@@ -66,7 +67,7 @@ nav .checkbox img {
   cursor: pointer;
 }
 
-ul {
+.nav_content ul {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -89,6 +90,11 @@ ul li a:hover {
   color: var(--primary-color);
 }
 
+.active {
+  border-top-color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
 /* Section 1 */
 .section {
   background-color: var(--bg);
@@ -102,6 +108,7 @@ ul li a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+  margin-bottom: 40px;
 }
 
 .typed-cursor {
@@ -196,6 +203,7 @@ ul li a:hover {
 .portfolio {
   color: var(--primary-color);
   background-color: var(--bg);
+
 }
 
 .portfolio:hover {
@@ -256,6 +264,285 @@ ul li a:hover {
 /* Section 1 End */
 
 /* Section 2 */
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ededed;
+  
+}
+
+
+.myProfile img{
+  max-height: 600px;
+  width: auto;
+  border-radius: 12px;
+}
+
+.aboutMe{
+  margin-left: 40px;
+}
+
+.aboutTitle{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  width: 180px;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.bio p{
+  max-width: 450px;
+  line-height: 2rem;
+}
+.summary{
+  max-width: 130px;
+  border: 2px;
+  border-bottom: 2px;
+  border: #00abf0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.summaryList ul{
+  list-style: none;
+  line-height: 2rem;
+}
+
+.summaryList span{
+  color: var(--primary-color);
+  margin-left:5px;
+}
 
 
 /* Section 2 End */
+
+/* Section 3 */
+
+.portfolioContainer{
+  margin-top: 80px;
+  margin-bottom: 40px;
+
+}
+
+.portfolioTitle{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: var(--text-light);
+ 
+}
+.portfolioTitle h1{
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  max-width: 80%;
+  margin-left: 8%;
+}
+.portfolio-card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 12px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portfolio-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+}
+
+.read-more-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.read-more-button:hover {
+  background-color: #2980b9;
+}
+/* Section 3 End */
+
+/* Section 4 */
+.contactContainer{
+  color: var(--text-light);
+  margin-top: 80px;
+}
+.contactTitle{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+.contactTitle h1{
+  border-bottom: 3px solid var(--primary-color);
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+  .styled-input {
+      width:100%;
+  }
+}
+
+.styled-input label {
+  color: var(--text-light);
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide { 
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.btn-message button {
+  float: right;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.submit-btn{
+  background-color: var(--primary-color);
+  color: var(--bg);
+}
+
+.submit-btn:hover{
+  background-color: var(--bg);
+  color: var(--primary-color);
+}
+
+
+@media (max-width: 768px) {
+  .submit-btn {
+      width:100%;
+      float: none;
+      text-align:center;
+  }
+}
+
+input[type=checkbox] + label {
+color: #ccc;
+font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+color: #f00;
+font-style: normal;
+}
+/* Section 4 End */

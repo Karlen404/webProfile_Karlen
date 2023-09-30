@@ -9,26 +9,32 @@
   </head>
   <body>
     <nav>
-      <div class="nav__content">
+      <div class="nav_content">
         <div class="logo"><a href="#">Karlen</a></div>
         <label for="check" class="checkbox">
-          <img src="assets/menu.svg" alt="">
+          <img src="assets/menu.svg" alt="" />
         </label>
         <input type="checkbox" name="check" id="check" />
         <ul>
-          <li><a href="#section_1">Home</a></li>
-          <li><a href="#section_2">About</a></li>
-          <li><a href="#section_3">Portfolio</a></li>
-          <li><a href="#section_4">Contact</a></li>
+          <li><a href="#section_1"">Home</a></li>
+          <li><a href="#section_2"">About</a></li>
+          <li><a href="#section_3"">Portfolio</a></li>
+          <li><a href="#section_4"">Contact</a></li>
         </ul>
       </div>
     </nav>
+
     <section class="section" id="section_1">
       <div class="section__container">
         <div class="content">
           <p class="subtitle">HELLO</p>
           <h1 class="title">
-            I'm <span>Karlen Syaputra<br/>a <div class="typed-text"></div><span class="cursor"></span></span> 
+            I'm
+            <span
+              >Karlen Syaputra<br />a
+              <div class="typed-text"></div>
+              <span class="cursor"></span
+            ></span>
           </h1>
 
           <p class="description">
@@ -38,31 +44,146 @@
           </p>
           <div class="action__btns">
             <button class="hire__me">Hire Me</button>
-            <button class="portfolio">Portfolio</button>
+            <button class="portfolio">Let's Talk</button>
           </div>
         </div>
         <div class="image">
-          <img src="assets/dp.jpg" alt="profile" />
+          <img src="assets/profile.jpg" alt="profile" />
         </div>
       </div>
     </section>
 
     <section id="section_2">
       <div class="about">
-        
+        <div class="myProfile">
+          <img src="assets/about.jpg" alt="" />
+        </div>
+        <div class="aboutMe">
+          <div class="aboutTitle">
+            <h1>About Me</h1>
+          </div>
+          <div class="bio">
+            <p>
+              I'm Karlen Syaputra, a college student of Mulawarman University,
+              currently pursuing my undergraduate degree in Information System.
+            </p>
+          </div>
+          <h2 class="summary">Summary</h2>
+
+          <div class="summaryList">
+            <ul>
+              <li>Birthday: <span>5 March 2002</span></li>
+              <li>Age: <span>21</span></li>
+              <li>Address: <span>Samarinda, Indonesia</span></li>
+              <li>Email: <span>karlensyaputra77@gmail.com</span></li>
+              <li>Phone: <span>+62 8225 1234 123</span></li>
+            </ul>
+          </div>
+          <div class="action__btns" style="margin-top: 20px">
+            <button class="hire__me">Read More</button>
+          </div>
+        </div>
       </div>
     </section>
-    <section>
-      <div class="portfolio">
 
+    <section id="section_3">
+      <div class="portfolioContainer">
+        <div class="portfolioTitle">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="cardContainer">
+          <div class="portfolio-card">
+            <img
+              src="https://i.pinimg.com/564x/0a/21/be/0a21be419a24199d27ca56f2e7f142d9.jpg"
+              alt="Portfolio Item"
+            />
+            <div class="card-overlay">
+              <h2>Readify</h2>
+              <p>Merupakan website untuk membaca Novel</p>
+              <a href="#" class="read-more-button">Read More</a>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="https://i.pinimg.com/564x/04/83/c4/0483c4e6aab0bb34e4731f9108553b91.jpg"
+              alt="Portfolio Item"
+            />
+            <div class="card-overlay">
+              <h2>Derawan Islands</h2>
+              <p>Merupakan website pengenalan tempat wisata yang ada di Kalimantan Timur</p>
+              <a href="#" class="read-more-button">Read More</a>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="https://i.pinimg.com/564x/90/e2/ae/90e2ae374fbeeedc045c2ce0535aaaca.jpg"
+              alt="Portfolio Item"
+            />
+            <div class="card-overlay">
+              <h2>Watchify</h2>
+              <p>Merupakan website streaming video</p>
+              <a href="#" class="read-more-button">Read More</a>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="https://i.pinimg.com/564x/dc/58/b0/dc58b01334cf60e7af9f59f1f0c3dd84.jpg"
+              alt="Portfolio Item"
+            />
+            <div class="card-overlay">
+              <h2>To do list</h2>
+              <p>Merupakan website untuk perencanaan kegiatan</p>
+              <a href="#" class="read-more-button">Read More</a>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="contact">
-
+    <section id="section_4">
+      <div class="contactContainer">
+        <div class="contactTitle">
+            <h1>contact me</h1>
+        </div>
+        <div class="row">
+            <h4 style="text-align:center">We'd love to hear from you!</h4>
+        </div>
+        <div class="row input-container">
+            <div class="">
+              <div class="styled-input wide">
+                <input type="text" required />
+                <label>Name</label> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input">
+                <input type="text" required />
+                <label>Email</label> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input" style="float:right;">
+                <input type="text" required />
+                <label>Phone Number</label> 
+              </div>
+            </div>
+            <div class="">
+              <div class="styled-input wide">
+                <textarea required></textarea>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="btn-message">
+              <button class="submit-btn">
+                Send Message
+              </button>
+            </div>
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </body>
 </html>
